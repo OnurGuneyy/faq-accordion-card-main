@@ -9,7 +9,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
@@ -21,8 +28,87 @@
             src="images/illustration-woman-online-desktop.svg"
             alt=""
           />
+          <img class="shadow" src="images/bg-pattern-desktop.svg" alt="" />
         </div>
-        <div class="right"></div>
+        <div class="right">
+          <div class="header">
+            <h1>FAQ</h1>
+          </div>
+          <div onclick="openAnswer(1)" class="row-1 a">
+            <div><p>How many team members can I invite?</p></div>
+            <div class="arrow">
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </div>
+          </div>
+          <div class="answer">
+            <div id="myDiv1" class="myDIV">
+              <h5>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <div onclick="openAnswer(2)" class="row-2 a">
+            <div><p>What is the maximum file upload size?</p></div>
+            <div class="arrow">
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </div>
+          </div>
+          <div class="answer">
+            <div id="myDiv2" class="myDIV">
+              <h5>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <div onclick="openAnswer(3)" class="row-3 a">
+            <div><p>How do I reset my password?</p></div>
+            <div class="arrow">
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </div>
+          </div>
+          <div class="answer">
+            <div id="myDiv3" class="myDIV">
+              <h5>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <div onclick="openAnswer(4)" class="row-4 a">
+            <div><p>Can I cancel my subscription?</p></div>
+            <div class="arrow">
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </div>
+          </div>
+          <div class="answer">
+            <div id="myDiv4" class="myDIV">
+              <h5>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <div onclick="openAnswer(5)" class="row-5 a">
+            <div><p>Do you provide additional support?</p></div>
+            <div class="arrow">
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </div>
+          </div>
+          <div class="answer">
+            <div id="myDiv5" class="myDIV">
+              <h5>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </h5>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
